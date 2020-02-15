@@ -3,7 +3,7 @@ Pour réaliser ce TP, il faut commencer par lancer la commande suivante:
   
 Cela va télécharger les deux datasets et les mettre dans le bon dossier.
 
-Pour la partie développement, je développais à l'intérieur du docker grâce à l'argument --rm, qui va directement nous conduire sur pyspark. En production avec le job spark, j'ai en effet enlevé cet argument pour le remplacer par -d (detach) qui permet de nous rendre la main pendant que le docker s'exécute.
+Pour la partie développement, je développais à l'intérieur du docker qui va directement nous conduire sur pyspark. En production avec le job spark, j'ai ajouté l'argument -d (detach) qui permet de nous rendre la main pendant que le docker s'exécute.
 Dans le Makefile, il suffit de lancer: make run-pyspark
 Ensuite il faut relever le n° de container avec la commande: docker ps
 Une fois cela fait, il faudra lancer la commande: docker exec -ti <n° de container> bash
